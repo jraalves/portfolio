@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>João Renato Alves — Especialista SRE | Observabilidade | DevOps | GitOps | FinOps | AIOps</title>
-<meta name="description" content="Portfólio de João Renato Alves, Especialista SRE e Observabilidade em São Paulo: trilhas SRE, Observabilidade, DevOps, GitOps, FinOps e AIOps, pirâmide de confiabilidade, projetos públicos e trajetória 2009–2026.">
+<meta name="description" content="Portfólio de João Renato Alves, Especialista SRE e Observabilidade em São Paulo: trilhas SRE, Observabilidade, DevOps, GitOps, FinOps e AIOps, pirâmide de confiabilidade, projetos públicos e trajetória 2013–2026.">
 <meta name="author" content="João Renato Alves">
 <meta name="color-scheme" content="dark light">
 <!--
@@ -252,6 +252,7 @@
     .skip-marker{break-before:page;page-break-before:always}
   }
 </style>
+<!-- v5 24/11/2026: datas alinhadas ao CV (13+ mercado desde jan/2013, 7+ SRE desde set/2019), botões de evidência no topo, sem repos obsoletos -->
 </head>
 <body>
 <a class="skip-link" href="#conteudo">Pular para o conteúdo principal</a>
@@ -296,9 +297,20 @@
         </p>
       </div>
       <div class="header-links">
-        <a class="btn" href="https://github.com/jraalves" rel="noreferrer" target="_blank">GitHub</a>
+        <a class="btn" href="https://github.com/jraalves" rel="noreferrer" target="_blank">GitHub · jraalves</a>
+        <a class="btn" href="#projetos" rel="noreferrer">Portfólio · evidências</a>
+        <a class="btn ghost" href="https://jraalves.github.io/portfolio/" rel="noreferrer" target="_blank">Este portfólio no ar</a>
+        <a class="btn ghost" href="cv.pdf" target="_blank" rel="noreferrer">Currículo (PDF, PT+EN)</a>
         <a class="btn ghost" href="https://www.linkedin.com/in/joaorenatoalves-sre" rel="noreferrer" target="_blank">LinkedIn</a>
-        <a class="btn ghost" href="cv.pdf" target="_blank" rel="noreferrer">Currículo (PDF)</a>
+      </div>
+      <div class="header-links" style="margin-top:10px">
+        <a class="btn ghost" href="https://github.com/jraalves/fiscal-automation-case" rel="noreferrer" target="_blank" title="Case de automação anonimizado">Case · automação fiscal</a>
+        <a class="btn" href="https://jraalves.github.io/automacao/" rel="noreferrer" target="_blank" title="Demonstração funcional com dados sintéticos">Demo · automação fiscal</a>
+        <a class="btn ghost" href="https://github.com/jraalves/observability-golden-signals-stack" rel="noreferrer" target="_blank" title="Prometheus, Grafana, Loki, Tempo, OpenTelemetry">Stack · golden signals</a>
+        <a class="btn ghost" href="https://github.com/jraalves/sre-senior-lab" rel="noreferrer" target="_blank" title="7 laboratórios com dados sintéticos">Lab · SRE sênior</a>
+        <a class="btn ghost" href="https://github.com/jraalves/otel-correlation-design" rel="noreferrer" target="_blank" title="Correlação por trace_id e X-Request-Id">Design · correlação OTel</a>
+        <a class="btn ghost" href="https://github.com/jraalves/sre-aiops-agent-reference" rel="noreferrer" target="_blank" title="Agentes de IA para triagem e runbook">AIOps · agentes</a>
+        <a class="btn ghost" href="https://github.com/jraalves/git-secret-guard" rel="noreferrer" target="_blank" title="Hook que bloqueia segredo antes do commit">Segurança · secret guard</a>
       </div>
     </div>
   </header>
@@ -307,7 +319,7 @@
   <section class="card" aria-labelledby="h-resumo" id="resumo">
     <h2 id="h-resumo">Summary</h2>
     <p class="lead">
-      Sou SRE com cerca de 16 anos de TI, sendo 6+ anos em SRE e observabilidade sobre sistemas críticos
+      Sou SRE com 13+ anos de mercado (desde janeiro de 2013), sendo 7+ anos em SRE e observabilidade (desde setembro de 2019) sobre sistemas críticos
       de meios de pagamento, telecom e financeiro. Hoje trabalho com confiabilidade e observabilidade de
       pagamentos de alta disponibilidade, com Dynatrace (Davis AI, baselines e Correlation ID entre jornadas
       Linux e Mainframe), AWS, Kubernetes/EKS, GitOps com ArgoCD, Terraform, OpenTelemetry e Linux/Mainframe.
@@ -321,11 +333,10 @@
       <b>AIOps aplicado</b> — construí uma plataforma interna de agentes de IA para SRE que integra dados de
       observabilidade, Jira, ArgoCD, GitLab e Kubernetes para calcular MTTR e recorrência, apoiar diagnóstico e
       antecipar alertas. <b>Decisão por evidência</b> — SLI, SLO, Error Budget e FinOps como base de priorização,
-      com segurança e governança de dados no centro.
+      com segurança, LGPD e governança de dados no centro — em ambiente regulado de meios de pagamento, onde segregação de ambientes, rastreabilidade e PCI-DSS são parte do dia a dia.
     </p>
     <p class="muted small">
-      Este portfólio é a adaptação do meu modelo de portfólio (Next.js, repo
-      <code>portfolio-joaorenatoalves-v3</code>) para as seis trilhas acima. Todo o conteúdo vem do meu CV:
+      Este portfólio é a versão estática do meu modelo de portfólio em Next.js (as seis trilhas acima), publicado em GitHub Pages e mantido sob o mesmo controle de versão. Todo o conteúdo vem do meu CV:
       onde existe número, ele está atribuído à experiência onde foi medido; onde não existe medição formal,
       descrevo a capacidade entregue, não um valor.
     </p>
@@ -615,13 +626,8 @@
           Kibana/Elastic.</p>
       </li>
       <li>
-        <a href="https://github.com/jraalves/portfolio-joaorenatoalves-v3" target="_blank" rel="noreferrer">Portfolio v3 (Next.js)</a>
-        <p class="meta">A versão dinâmica deste portfólio, com o mesmo objeto <code>data</code> e o componente da
-          pirâmide adaptado para nove camadas.</p>
-      </li>
-      <li>
-        <a href="https://github.com/jraalves/jraalves-projects-portfolio" target="_blank" rel="noreferrer">Portfolio — base de scripts</a>
-        <p class="meta">Repositório de apoio com automações em Shell usadas nos portfólios.</p>
+        <a href="https://github.com/jraalves/profile-assets" target="_blank" rel="noreferrer">Pipelines de CI/CD versionados</a>
+        <p class="meta">As definições de pipeline que eu escrevo e versiono — GitHub Actions e GitLab CI com lint, testes, validação de regras de observabilidade e checagem de anonimato. A execução local é a que sustenta a publicação: <code>make ci</code> nos laboratórios, com exit 0. Para ativar na nuvem basta copiar o YAML para <code>.github/workflows/</code> — prefiro mostrar a definição exata a exibir um badge que não roda.</p>
       </li>
       <li class="confidencial">
         <b>Plataforma de gestão fiscal e conformidade tributária (projeto confidencial)</b> · 2025–2026
@@ -701,24 +707,10 @@
 
   <!-- ============ TRAJETÓRIA ============ -->
   <section class="card skip-marker" aria-labelledby="h-traj" id="trajetoria">
-    <h2 id="h-traj">Trajetória — 2009 → 2026</h2>
+    <h2 id="h-traj">Trajetória — 2013 → 2026</h2>
     <p class="muted">Da primeira para a última, como no CV. As etiquetas em cada linha indicam de qual trilha este
       período trouxe evidência.</p>
     <ol class="timeline">
-      <li class="tl-item">
-        <div class="tl-head"><span class="tl-period">mar/2009 – dez/2009</span></div>
-        <span class="tl-role">Estágio em Business Intelligence</span> — <span class="tl-org">Keyword Tecnologia</span>
-        <p class="tl-note">Scripts, procedures, packages e views em banco de dados; modelos de análise de negócios;
-          suporte e manutenção de sistemas de BI.</p>
-        <ul class="tl-tags"><li>Dados</li><li>SQL</li></ul>
-      </li>
-      <li class="tl-item">
-        <div class="tl-head"><span class="tl-period">out/2010 – jan/2013</span></div>
-        <span class="tl-role">Analista de Sistemas Júnior</span> — <span class="tl-org">Masterdom | PRODESP | Tribunal de Justiça</span>
-        <p class="tl-note">Desenvolvimento web J2EE; manual online em HTML, CSS e JavaScript; requisitos, testes e
-          manutenção em IBM RAD, WebSphere AS 6/7 ND, Aqua Data Studio e StarTeam/CVS/SVN.</p>
-        <ul class="tl-tags"><li>DevOps</li><li>Java/J2EE</li><li>WebSphere</li></ul>
-      </li>
       <li class="tl-item">
         <div class="tl-head"><span class="tl-period">jan/2013 – jan/2014</span></div>
         <span class="tl-role">Analista de Sistemas | Suporte a Aplicações</span> — <span class="tl-org">Produban | Banco Santander</span>
@@ -867,7 +859,7 @@
   <section class="card en skip-marker" lang="en" aria-labelledby="h-en" id="english">
     <h2 id="h-en">English summary</h2>
     <p class="lead">
-      SRE with about 16 years in IT, 6+ of them in SRE and observability over mission-critical payment, telecom and
+      SRE with 13+ years in the market (since January 2013), 7+ of them in SRE and observability (since September 2019) over mission-critical payment, telecom and
       financial platforms. Currently an SRE &amp; Observability Specialist focused on high-availability payments.
     </p>
     <dl>
